@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Headers</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    /* Align Headers */
+    th {
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <!-- Vertical Headers -->
+  <table style="width:600px">
+    <tr>
+      <th>Firstname</th>
+      <td>Lucy</td>
+      <td>Gandalf</td>
+    </tr>
+    <tr>
+      <th>Lastname</th>
+      <td>Lu</td>
+      <td>The Grey</td>
+    </tr>
+    <tr>
+      <th>Age</th>
+      <td>30</td>
+      <td>400</td>
+    </tr>
+  </table>
+  <br><br>
+
+  <!-- Multiple Columns Headers -->
+  <table style="width:600px">
+    <tr>
+      <th colspan="2">Name</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Lucy</td>
+      <td>Lu</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>Gandalf</td>
+      <td>The Grey</td>
+      <td>400</td>
+    </tr>
+  </table>
+  <br><br>
+
+  <!-- Table Caption -->
+  <table style="width:600px">
+    <caption>Heroes Information</caption>
+    <tr>
+      <th colspan="2">Name</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Lucy</td>
+      <td>Lu</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>Gandalf</td>
+      <td>The Grey</td>
+      <td>400</td>
+    </tr>
+  </table>
+</body>
+</html>
