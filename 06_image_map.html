@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Map</title>
+</head>
+<body>
+<img src="image.jpg" alt="A beautiful image" usemap="#workmap" width="400" height="379">
+
+<map name="workmap">
+  <!-- Rectangular -->
+  <area shape="rect" coords="34,44,270,350" alt="Area1" href="area1.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Area2" href="area2.htm">
+  <!-- Circle -->
+  <area shape="circle" coords="337,300,44" alt="Area3" href="area3.htm">
+</map>
+
+<img src="image2.jpg" alt="Another beautiful image" usemap="#workmap" width="500" height="600">
+
+<map name="workmap">
+<!-- Polygonal -->
+<area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" href="area.htm">
+</map>
+</body>
+</html>
