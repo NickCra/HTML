@@ -1,6 +1,7 @@
 # HTML Basics
 
-Basic HTML code:
+## Overview:  
+<br>
 
 - Styles
 - Links
