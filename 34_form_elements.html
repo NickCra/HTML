@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Elements</title>
+</head>
+<body>
+  <!-- <select> Element -->
+  <form action="#">
+    <label for="cars">Choose a car </label>
+    <select id="cars" name="cars">
+      <option value="volvo">Volvo</option>
+      <option value="volkswagen">Volkswagen</option>
+      <option value="porche">Porche</option>
+    </select>
+    <input type="submit" value="Submit">
+  </form>
+  <br>
+
+ <!-- <select> Element - Visible Values -->
+  <form action="#">
+    <label for="cars">Choose a car </label>
+    <select id="cars" name="cars" size="3">
+      <option value="volvo">Volvo</option>
+      <option value="volkswagen">Volkswagen</option>
+      <option value="porche">Porche</option>
+    </select>
+    <input type="submit" value="Submit">
+  </form>
+  <br>
+
+  <!-- <select> Element - Multiple Selections -->
+  <form action="#">
+    <label for="cars">Choose a car </label>
+    <select id="cars" name="cars" size="3" multiple>
+      <option value="volvo">Volvo</option>
+      <option value="volkswagen">Volkswagen</option>
+      <option value="porche">Porche</option>
+    </select>
+    <input type="submit" value="Submit">
+  </form>
+  <br><br>
+
+  <!-- <textarea> Element -->
+  <textarea rows="10" cols="30">Enter text here...</textarea>
+  <br><br>
+
+  <!-- Button Element -->
+  <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+  <br><br>
+
+  <!-- <fieldset> and <legend> Elements -->
+  <form action="#">
+    <fieldset>
+      <legend>Personalia:</legend>
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" value="Nick"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value="Craeymeersch"><br><br>
+      <input type="submit" value="Submit">
+    </fieldset>
+  </form>
+  <br><br>
+
+  <!-- <datalist> Element -->
+  <form>
+    <input list="browsers" name="browsers">
+    <datalist id="browsers">
+      <option value="Internet Explorer"></option>
+      <option value="Firefox"></option>
+      <option value="Chrome"></option>
+      <option value="Opera"></option>
+      <option value="Safari"></option>
+    </datalist>
+    <input type="submit">
+  </form>
+
+  <!-- <output> Element -->
+  <form action="#"
+  oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    0
+    <input type="range" id="a" name="a" value="50">
+    100 +
+    <input type="number" id="b" name="b" value="50">
+    =
+    <output name="x" for="a b"></output>
+    <br><br>
+    <input type="submit">
+  </form>
+</body>
+</html>
+
