@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Input Attributes</title>
+</head>
+<body>
+  <!-- Value -->
+  <form action="#">
+    <label for="fname">First Name:</label><br>
+    <input type="text" id="fname" name="fname" value="Nick"><br>
+    <label for="lname">Last Name:</label><br>
+    <input type="text" id="lname" name="lname" value="Craeymeersch"><br><br>
+    <input type="submit" value="Submit">
+    </label>
+  </form>
+  <br><hr><br>
+
+  <!-- Read-only -->
+  <form action="#">
+    <label for="fname">First Name:</label><br>
+    <input type="text" id="fname" name="fname" value="Nick" readonly><br>
+    <label for="lname">Last Name:</label><br>
+    <input type="text" id="lname" name="lname" value="Craeymeersch"><br><br>
+    <input type="submit" value="Submit">
+    </label>
+  </form>
+  <br><hr><br>
+
+  <!-- Disabled -->
+  <form action="#">
+    <label for="fname">First Name:</label><br>
+    <input type="text" id="fname" name="fname" value="Nick" disabled><br>
+    <label for="lname">Last Name:</label><br>
+    <input type="text" id="lname" name="lname" value="Craeymeersch"><br><br>
+    <input type="submit" value="Submit">
+    </label>
+  </form>
+  <br><hr><br>
+
+  <!-- Size -->
+  <form action="#">
+    <label for="fname">First Name:</label><br>
+    <input type="text" id="fname" name="fname" value="Nick" size="40"><br>
+    <label for="pin">Last Name:</label><br>
+    <input type="text" id="pin" name="pin" size="4"><br><br>
+    <input type="submit" value="Submit">
+    </label>
+  </form>
+  <br><hr><br>
+
+  <!-- Maxlength -->
+  <form action="#">
+    <label for="fname">First Name:</label><br>
+    <input type="text" id="fname" name="fname" value="Nick" size="40"><br>
+    <label for="pin">Last Name:</label><br>
+    <input type="text" id="pin" name="pin"  maxlength="4" size="4"><br><br>
+    <input type="submit" value="Submit">
+    </label>
+  </form>
+  <br><hr><br>
+
+  <!-- Min and max -->
+  <form action="#">
+    <label for="datemax">Enter a date before 1980-01-01:</label>
+    <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+    <label for="datemin">Enter a date after 2000-01-01:</label>
+    <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+  <br><hr><br>
+</body>
+
+  <!-- Multiple -->
+  <p>The multiple attribute specifies that the user is allowed to enter more than one value in an input field.</p>
+
+  <form action="#">
+    <label for="files">Select files:</label>
+    <input type="file" id="files" name="files" multiple><br><br>
+    <input type="submit" value="Submit">
+  </form>
+  <p>To select multiple files, hold down the CTRL or SHIFT key while selecting.</p>
+  <br><hr><br>
+
+  <!-- Pattern -->
+  <form action="#">
+    <label for="country_code">Country code:</label>
+    <input type="text" id="country_code" name="country_code"
+    pattern="[A-Za-z]{3}" title="Three letter country code">
+  </form>
+  <br><hr><br>
+
+  <!-- Placeholder -->
+  <form action="#">
+    <label for="country_code">Country code:</label>
+    <input type="text" id="country_code" name="country_code"
+    pattern="[A-Za-z]{3}" title="Three letter country code" placeholder="BEL">
+  </form>
+  <br><hr><br>
+
+  <!-- Required -->
+  <form action="#">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <input type="submit" value="Submit">
+  </form>
+  <br><hr><br>
+
+  <!-- Step -->
+  <form action="#">
+    <label for="points">Points:</label>
+    <input type="number" id="points" name="points" step="3">
+    <input type="submit" value="Submit">
+  </form>
+  <br><hr><br>
+
+  <!-- Autofocus -->
+  <form action="#">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" autofocus><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+  <br><hr><br>
+
+  <!-- Height and Width -->
+  <form action="#">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="image" src="image.gif" alt="Submit" width="48" height="48">
+  </form>
+  <br><hr><br>
+  
+  <!-- Autocomplete -->
+  <form action="#" autocomplete="on">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" autocomplete="off"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+</html>
