@@ -1,4 +1,4 @@
-# HTML Basics
+# HTML
 
 ## Overview:  
 <br>
